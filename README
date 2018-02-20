@@ -17,6 +17,9 @@ Configuração para Desenvolvimento
 
 - pip install flask-sqlalchemy mysql-python
 
+Configurando variavel de ambiente para atuar no modo desenvolvimento:
+  - export FLASK_CONFIG=development
+
 Configurando o mysql
   mysql -u root
     CREATE USER 'dt_admin'@'localhost' IDENTIFIED BY 'dt2016';
@@ -36,7 +39,6 @@ Para interface do programa
 
 Execução
 	Para executar o programa basta no terminal configurar as variaveis de ambiente: 
-		- export FLASK_CONFIG=development
 		- export FLASK_APP=run.py
 	O programa é executado ao se digitar no terminal:
 		- flask run
