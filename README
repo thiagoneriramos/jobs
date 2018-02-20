@@ -31,5 +31,14 @@ Instalando e configurando a migração
           flask db migrate
           flask db upgrade
 
+Para interface do programa
+	pip install flask-bootstrap
 
-pip install flask-bootstrap
+Execução
+	Para executar o programa basta no terminal configurar as variaveis de ambiente: 
+		- export FLASK_CONFIG=development
+		- export FLASK_APP=run.py
+	O programa é executado ao se digitar no terminal:
+		- flask run
+
+
