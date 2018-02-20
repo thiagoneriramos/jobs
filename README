@@ -1,0 +1,35 @@
+Aplicação Cliente-Servidor de Veiculos
+O objetivo dessa aplicação é realizar um CRUD(Create, Read, Update e Delete) através de um banco de dados mysql,
+utilizando a linguaguem de programação Python e o framework Flask. Na aplicação será possivel cadastrar um novo veículo apartir
+dos seguintes dados:
+- Marca
+- Modelo
+- Cor
+- Ano
+- Preço
+- Descrição
+- se é novo ou não
+- Data em que foi realizado o cadastro
+- Data da ultima atualização dos dados
+
+Configuração para Desenvolvimento
+É necessário instalar as depêndencias a seguir para que a aplicação execute com êxito.
+
+- pip install flask-sqlalchemy mysql-python
+
+Configurando o mysql
+  mysql -u root
+    CREATE USER 'dt_admin'@'localhost' IDENTIFIED BY 'dt2016';
+    CREATE DATABASE dreamteam_db;
+    GRANT ALL PRIVILEGES ON dreamteam_db . * TO 'dt_admin'@'localhost';
+
+Instalando e configurando a migração
+      pip install flask-migrate
+        flask db init
+
+        Executar sempre que ocorrer alteração no Banco de dados
+          flask db migrate
+          flask db upgrade
+
+
+pip install flask-bootstrap
