@@ -41,6 +41,11 @@ Execução
 	Para executar o programa basta no terminal configurar as variaveis de ambiente: 
 		- export FLASK_APP=run.py
 	O programa é executado ao se digitar no terminal:
+
+
+thiagoneriramos79@gmail.com
+
+
 		- flask run
 
 
